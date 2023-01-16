@@ -1,0 +1,56 @@
+:root {
+    --brand-color: #4D5AE5;
+    --text-color: #2E2F42;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--brand-color);
+}
+
+.buttons button {
+    background-color: #F4F4FD;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--brand-color);
+}
+
+.buttons button:hover {
+    color: white;
+    background-color: var(--brand-color);
+}
+
+.contacts a {
+    color:  #434455;
+}
+.contacts a:hover {
+    color: var(--brand-color);
+}
+
+.pages a {
+    color: var(--text-color);
+}
+
+.pages a:hover {
+    color: var(--brand-color);
+}
+.footer {
+    background-color: var(--text-color);
+    color: white;
+}
+
+.footer .logo {
+    color: white;
+}
