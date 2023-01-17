@@ -15,6 +15,7 @@ body {
     font-size: 18px;
     text-decoration: none;
     color: var(--text-color);
+    
 }
 
 .logo span {
@@ -26,6 +27,11 @@ body {
     font-weight: 600;
     cursor: pointer;
     color: var(--brand-color);
+    border-radius: 4px;
+    border: 1px solid #E7E9FC;
+    padding: 14px 20px;
+    margin: 0 10px;
+    font-size: 16px;
 }
 
 .buttons button:hover {
@@ -33,6 +39,11 @@ body {
     background-color: var(--brand-color);
 }
 
+.under-photo-text {
+    font-size: 20px;
+    font-weight: 600;
+
+}
 .contacts a {
     color:  #434455;
 }
@@ -54,4 +65,8 @@ body {
 
 .footer .logo {
     color: white;
+    font-size: 18px;
+}
+.footer p {
+   color: #E7E9FC;
 }
