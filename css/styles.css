@@ -1,20 +1,62 @@
 :root {
     --brand-color: #4D5AE5;
-    --text-color: #2E2F42;
+    --text-color-dark: #2E2F42;
+    --text-color-grey: #434455;
+    --main-font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font-family);
     font-size: 16px;
-    line-height: 1.5;
-    color: var(--text-color);
+    color: var(--text-color-dark);
+    letter-spacing: 0.02em;
+    
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-link {
+    color: var(--text-color-dark);
+    font-weight: 600;
+    font-size: 16px;
+}
+.nav-link:hover {
+    color: var(--text-color-grey);
+}
+
+.contact-link {
+    font-size: 16px;
+    color: var(--text-color-grey);
+    font-weight: 400;
+
+}
+
+.banner-slogan {
+    font-weight: 600;
+    font-size: 56px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 1.2;
+    width: 492px;
+    margin: 0 auto;
+}
+.banner-section {
+    background-color: var(--text-color-dark);
+    text-align: center;
+
 }
 
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-color-dark);
     
 }
 
@@ -22,21 +64,58 @@ body {
     color: var(--brand-color);
 }
 
-.buttons button {
-    background-color: #F4F4FD;
-    font-weight: 600;
+
+.btn {
+    font-weight: 500;
     cursor: pointer;
-    color: var(--brand-color);
     border-radius: 4px;
-    border: 1px solid #E7E9FC;
     padding: 14px 20px;
-    margin: 0 10px;
     font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    font-family: var(--main-font-family);
 }
 
-.buttons button:hover {
+.btn-blue {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--brand-color);
+    color: white;
+    border-width: 0;
+     
+}
+.btn-blue:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.btn-white {
+    background-color: #F4F4FD;
+    color: var(--brand-color);
+    border: 1px solid #E7E9FC;
+    margin: 0 10px;
+}
+
+.btn-white:hover {
     color: white;
     background-color: var(--brand-color);
+}
+
+.description {
+    line-height: 1.5;
+    color: var(--text-color-grey);
+}
+
+.title {
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-color-dark);
+}
+
+.section-title {
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--text-color-dark);
 }
 
 .under-photo-text {
@@ -44,29 +123,30 @@ body {
     font-weight: 600;
 
 }
-.contacts a {
-    color:  #434455;
-}
-.contacts a:hover {
-    color: var(--brand-color);
-}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
-.pages a {
-    color: var(--text-color);
-}
-
-.pages a:hover {
-    color: var(--brand-color);
-}
 .footer {
-    background-color: var(--text-color);
+    background-color: var(--text-color-dark);
     color: white;
 }
 
 .footer .logo {
     color: white;
-    font-size: 18px;
+    
 }
 .footer p {
    color: #E7E9FC;
+    line-height: 1.5;
 }
