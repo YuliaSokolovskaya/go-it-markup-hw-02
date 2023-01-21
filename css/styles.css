@@ -3,6 +3,8 @@
     --text-color-dark: #2E2F42;
     --text-color-grey: #434455;
     --main-font-family: 'Roboto', sans-serif;
+    --active-link-color:#404BBF;
+    --bg-grey-color:#F4F4FD;
 }
 
 body {
@@ -23,11 +25,11 @@ ul {
 
 .nav-link {
     color: var(--text-color-dark);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
 }
-.nav-link:hover {
-    color: var(--text-color-grey);
+.nav-link:hover, .nav-link:focus, .nav-link.current {
+    color: var(--active-link-color);
 }
 
 .contact-link {
@@ -36,15 +38,19 @@ ul {
     font-weight: 400;
 
 }
+.contact-link:hover, .contact-link:focus{
+    color: var(--active-link-color);
+}
 
 .banner-slogan {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
     color: #FFFFFF;
     text-align: center;
     line-height: 1.2;
-    width: 492px;
+    width: 500px;
     margin: 0 auto;
+    letter-spacing: 0.02em;
 }
 .banner-section {
     background-color: var(--text-color-dark);
@@ -57,7 +63,8 @@ ul {
     font-size: 18px;
     text-decoration: none;
     color: var(--text-color-dark);
-    
+    font-weight: 800;
+    letter-spacing: 0.02em;
 }
 
 .logo span {
@@ -79,12 +86,12 @@ ul {
 .btn-blue {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--brand-color);
-    color: white;
+    color: #FFFFFF;
     border-width: 0;
      
 }
-.btn-blue:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.btn-blue:hover, .btn-blue:focus {
+    background-color:var(--active-link-color);
 }
 
 .btn-white {
@@ -95,7 +102,7 @@ ul {
 }
 
 .btn-white:hover {
-    color: white;
+    color: #FFFFFF;
     background-color: var(--brand-color);
 }
 
@@ -106,23 +113,23 @@ ul {
 
 .title {
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     color: var(--text-color-dark);
+    letter-spacing: 0.02em;
 }
 
 .section-title {
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     color: var(--text-color-dark);
+    letter-spacing: 0.02em;
+}
+.bg-grey{
+    background-color: var(--bg-grey-color);
 }
 
-.under-photo-text {
-    font-size: 20px;
-    font-weight: 600;
-
-}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -135,15 +142,15 @@ ul {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
 .footer {
     background-color: var(--text-color-dark);
-    color: white;
+    color: #FFF;
 }
 
 .footer .logo {
-    color: white;
+    color: #FFF;
 }
 
 .footer p {
